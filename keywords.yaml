@@ -1,0 +1,37 @@
+{
+ 
+        # spacy language model name
+        langModelName : 'en_core_web_sm',
+        
+        # Include tokens with these spacy named entity types
+        nerTypeIncludeL : [ "NORP","GPE","PERSON","FAC","ORG","LOC","PRODUCT","EVENT","WORK_OF_ART","LAW","LANGUAGE" ],
+
+        # Exclude tokens these spacy named entity types
+        nerTypeDropL    : [ "DATE","TIME","PERCENT","MONEY","QUANTITY","ORDINAL","CARDINAL"],
+
+        # generate output using per-document 
+        usePerDocWordCountFl : False,
+        
+        # Count of Corpus-wide important words to consider
+        corpusKeyWordCount : 25,
+
+        # Count of important words to consider per document
+        perDocKeyWordCount : 5,
+
+        # Combine results of key words which are substrings of other key words 
+        mergeKeyWordSubStringsFl : True,
+
+        # Do not consider words with TF/IDF scores below this to be key words
+        minTfIdfScore : 0,
+
+        # Use customized tokenizer to better support hyphenated terms
+        useInfixPatternTokenizerFl : True,
+
+        # Use 'named-entity' tokens only
+        useNamedEntityTokensOnlyFl : False,
+
+        # Merge key words which are sub-strings of other keywords
+        mergeKeywordSubStringsFl : True,
+        
+
+}
